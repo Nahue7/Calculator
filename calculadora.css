@@ -1,0 +1,90 @@
+:root {
+    --white: #FFFFFF;
+    --darkblue: #999fa0;
+    --blue: #456f74e1;
+    --darkgray:rgb(65, 65, 70);
+    --gray: #55575a;
+    --lightgray: #D3CBBD;
+}
+
+body {
+    font-size: 2rem;
+    height: 100%;
+    align-items: center;
+    font-family: Verdana;
+}
+
+.container {
+    margin: 0 auto;
+    width: 35%;
+    min-width: 220px;
+    max-width: 350px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--gray)
+}
+
+.calculator {
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--lightgray);
+    border-radius: 10px;
+}
+
+.display {
+    height: 12%;
+    text-align: end;
+    margin-bottom: 3%;
+    padding: 1% 3%;
+    background-color: var(--white);
+    color: var(--gray);
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    background-color: var(--lightgray);
+    grid-template-columns: repeat(4, 1fr);
+    height: 80%;
+    gap: 5px;
+}
+
+.clear {
+    grid-area: 4/1/5/2;
+}
+
+.dot {
+    grid-area: 4/3/5/4;
+}
+
+.zero {
+    grid-area: 4/2/5/3;
+}
+
+.calculate {
+    grid-area: 5/1/6/5;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.calculate:active {
+    background-color: var(--darkblue);
+}
+
+button {
+    font-size: 2rem;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--gray);
+    color: var(--white);
+    cursor:pointer;
+}
+
+button:active {
+    background-color: var(--darkgray);
+}
